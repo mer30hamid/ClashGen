@@ -4,7 +4,7 @@
    * "block list" for persian bad links (https://github.com/MasterKia/PersianBlocker/)
    * "white list" for persian sites (https://github.com/SamadiPour/iran-hosted-domains/)
    * Cache downloaded lists ("block list" and "white list") and control cache time
-   * Automatically Use local lists ("block list" and "white list") from files in `sources\iran_domains` if they are not available from web links.
+   * Automatically Use local lists ("block list" and "white list") from files in `sources\iran_domains` if they are not available from web links. you can change pathes and links in `options.yaml`
 
 ## Dependencies:
   * python 3 (https://www.python.org/downloads/)
