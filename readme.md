@@ -3,4 +3,4 @@ run:
 
 options:
 
-* edit `options.yaml`
+* copy `options-sample.yaml` to `options.yaml` and edit it.
