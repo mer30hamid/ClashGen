@@ -1,0 +1,25 @@
+# where to cache downloaded files
+cache-path: ./cache
+
+# cache age in days
+cache-lifetime: 7
+
+iran-hosted-domains-link: https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/domains.txt
+iran-hosted-domains-file: ./sources/iran_domains/domains.txt
+
+iran-ads-domains-link: https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt
+iran-ads-domains-file: ./sources/iran_domains/PersianBlockerHosts.txt
+
+subscribe-links:
+- http://127.0.0.1:10228/sources/subs/ssr.base64
+- http://127.0.0.1:10228/sources/subs/all.base64
+
+# subconverter parameters, more info here: https://github.com/tindy2013/subconverter#description
+subconverter-bin-path: ./subconverter/subconverter.exe
+subconverter-ip-port: 127.0.0.1:25500
+final-config-path: ./config.yaml
+subconvrter-options:
+- fdn: 'false'
+- expand: 'true'
+- config: http://127.0.0.1:10228/sources/subconverteriniexample/Full_AdblockPlus.ini
+- target: clash

@@ -1,0 +1,6 @@
+/config.yaml
+/sources/subs/*.base64
+/cache
+/subconverter/*
+!subconverter/readme.txt
+/options.yaml
