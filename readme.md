@@ -1,9 +1,10 @@
 # Yet another subconverter script for generating Clash config!
 
 ## Features:
-   * block list for persian bad links (https://github.com/MasterKia/PersianBlocker/)
-   * white list for persian sites (https://github.com/SamadiPour/iran-hosted-domains/)
-   * cache downloaded list and control cache time
+   * "block list" for persian bad links (https://github.com/MasterKia/PersianBlocker/)
+   * "white list" for persian sites (https://github.com/SamadiPour/iran-hosted-domains/)
+   * Cache downloaded lists ("block list" and "white list") and control cache time
+   * Automatically Use local lists ("block list" and "white list") from files in `sources\iran_domains` if they are not available from web links.
 
 ## Dependencies:
   * python 3 (https://www.python.org/downloads/)
