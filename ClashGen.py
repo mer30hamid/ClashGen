@@ -645,6 +645,7 @@ if __name__ == '__main__':
     direct_domains_rules_path = os.path.join(options['cache-path'], 'subconverter/IranDomains.list')
     block_domains_rules_path = os.path.join(options['cache-path'], 'subconverter/IranAdsDomains.list')
     subconverter_rules_iran_path = os.path.dirname(os.path.abspath(options['subconverter-bin-path'])) + "/rules/Iran"
+    os.makedirs(subconverter_rules_iran_path, exist_ok=True)
     
     # if cache_age is expired then generate lists again
     if cache_age.days > options['cache-lifetime']:
@@ -654,9 +655,12 @@ if __name__ == '__main__':
         shutil.copy(direct_domains_rules_path, subconverter_rules_iran_path + "/IranDomains.list")
         shutil.copy(block_domains_rules_path, subconverter_rules_iran_path + "/PersianBlocker.list")
         save_to_file(lastupdate_file_path, cache_last_update)
-        
 
-
+    # force copy lists        
+    if not os.path.exists(subconverter_rules_iran_path + "/IranDomains.list"):
+       shutil.copy(direct_domains_rules_path, subconverter_rules_iran_path + "/IranDomains.list")
+    if not os.path.exists(subconverter_rules_iran_path + "/PersianBlocker.list"):
+       shutil.copy(block_domains_rules_path, subconverter_rules_iran_path + "/PersianBlocker.list")
 
     # Output path
     final_config_path = options['final-config-path']
