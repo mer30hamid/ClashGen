@@ -1,4 +1,4 @@
-# Yet another subconverter script!
+# Yet another subconverter script for Generating Clash Config file!
 
 ## Features:
    * block list for persian bad links (https://github.com/MasterKia/PersianBlocker/)
