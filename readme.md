@@ -1,4 +1,4 @@
-# Yet onother subconverter script!
+# Yet another subconverter script!
 
 ## Features:
    * block list for persian bad links (https://github.com/MasterKia/PersianBlocker/)
