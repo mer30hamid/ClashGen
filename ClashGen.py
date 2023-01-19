@@ -620,6 +620,7 @@ def get_subconverter_link(options):
         link += urllib.parse.quote(s, safe='')
         link += "|"
     link = link[:-1] # remove last "|"
+    link += "&clash.dns=1"
     return link
 
 
