@@ -7,9 +7,10 @@
    * Automatically Use local lists ("block list" and "white list") from files in `sources\iran_domains` if they are not available from web links. you can change pathes and links in `options.yaml`
 
 ## Dependencies:
-  * python 3 (https://www.python.org/downloads/)
-  * subconverter (https://github.com/tindy2013/subconverter/releases)
+  * python 3 (https://www.python.org/downloads)
+  * subconverter (https://github.com/tindy2013/subconverter)
 
 ## Usage
   * copy `options-sample.yaml` to `options.yaml` and edit it.
+  * Download [subconverter](https://github.com/tindy2013/subconverter/releases) and copy it to subconverter folder or change "subconverter-bin-path" in options.yaml
   * run script: `python ClashGen.py`
